@@ -1,0 +1,63 @@
+{
+  "name": "prizm-lite",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "prizm-lite/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/prizm-lite",
+        "main": "prizm-lite/src/index.ts",
+        "tsConfig": "prizm-lite/tsconfig.lib.json",
+        "assets": ["prizm-lite/*.md"],
+        "generatePackageJson": true,
+        "format": ["cjs"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../coverage/prizm-lite"
+      }
+    },
+    "storybook": {
+      "executor": "@nx/storybook:storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "prizm-lite/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/prizm-lite",
+        "configDir": "prizm-lite/.storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "test-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook -c prizm-lite/.storybook --url=http://localhost:4400"
+      }
+    }
+  },
+  "tags": []
+}
