@@ -11,9 +11,24 @@
         "outputPath": "dist/prizm-lite",
         "main": "prizm-lite/src/index.ts",
         "tsConfig": "prizm-lite/tsconfig.lib.json",
-        "assets": ["prizm-lite/*.md"],
+        "assets": ["prizm-lite/*.md",
+          {
+            "input": "prizm-lite/src/lib/fonts",
+            "glob": "**/*.{woff,woff2}",
+            "output": "./"
+          },
+          {
+            "input": "prizm-lite/src/lib",
+            "glob": "**/*.{css,woff,woff2}",
+            "output": "./src"
+          }
+        ],
         "generatePackageJson": true,
-        "format": ["cjs"]
+        "external": ["*.woff","*.woff2"],
+        "additionalEntryPoints": ["prizm-lite/src/styles.css"],
+        "format": ["esm"],
+        "bundle": true,
+        "minify": true
       }
     },
     "lint": {

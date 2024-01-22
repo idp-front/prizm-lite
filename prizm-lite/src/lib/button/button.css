@@ -1,0 +1,217 @@
+.prizm-button {
+  font-family: 'Inter';
+  font-weight: 600;
+  outline: none;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: top;
+  border: 0;
+  border-radius: var(--prizm-button-radius, 2px);
+  min-width: var(--prizm-button-min-width, unset);
+  color: var(--prizm-text-icon-exception);
+  cursor: pointer;
+
+  background: var(--prizm-button-primary-solid-default);
+  min-height: 44px;
+  padding: 14px 16px 14px 16px;
+}
+.prizm-button:hover {
+  background: var(--prizm-button-primary-solid-hover);
+  color: var(--prizm-text-icon-exception);
+}
+
+.prizm-button:focus {
+  box-shadow: 0 0 0 2px var(--prizm-background-stroke-focus);
+}
+
+.prizm-button:disabled {
+  background: var(--prizm-button-disable);
+  color: var(--prizm-text-icon-disable);
+  cursor: not-allowed;
+}
+
+/*Sizing*/
+
+.prizm-button-xl,.prizm-button[data-size='xl'] {
+  min-height: 44px;
+  padding: 14px 16px 14px 16px;
+}
+
+.prizm-button-l,.prizm-button[data-size='l'] {
+  min-height: 40px;
+  padding: 12px 16px 12px 16px;
+}
+
+.prizm-button-xm,.prizm-button[data-size='xm'] {
+  min-height: 36px;
+  padding: 10px 16px 10px 16px;
+}
+.prizm-button-m,.prizm-button[data-size='m'] {
+  min-height: 32px;
+  padding: 8px 16px 8px 16px;
+}
+.prizm-button-s,.prizm-button[data-size='s'] {
+  min-height: 24px;
+  padding: 4px 8px 4px 8px;
+}
+
+/*Default*/
+/*Colors*/
+/*Primary*/
+.prizm-button-primary {
+  background: var(--prizm-button-primary-solid-default);
+}
+
+.prizm-button-primary:hover {
+  background: var(--prizm-button-primary-solid-hover);
+}
+
+/*Secondary*/
+.prizm-button-secondary {
+  background: var(--prizm-button-secondary-solid-default);
+}
+
+.prizm-button-secondary:hover {
+  background: var(--prizm-button-secondary-solid-hover);
+}
+
+/*Success*/
+.prizm-button-success,.prizm-button[data-appearance='success'] {
+  background: var(--prizm-button-success-solid-default);
+}
+.prizm-button-success:hover {
+  background: var(--prizm-button-success-solid-hover);
+}
+
+/*Warning*/
+.prizm-button-warning,.prizm-button[data-appearance='warning'] {
+  background: var(--prizm-button-warning-solid-default);
+}
+.prizm-button-warning:hover {
+  background: var(--prizm-button-warning-solid-hover);
+}
+
+/*Danger*/
+.prizm-button-danger,.prizm-button[data-appearance='danger'] {
+  background: var(--prizm-button-alarm-solid-default);
+}
+.prizm-button-danger:hover {
+  background: var(--prizm-button-alarm-solid-default);
+}
+
+/*----------Outline-----------*/
+.prizm-button-outline {
+  border: 1px solid var(--prizm-button-primary-solid-default);
+  background: transparent;
+  color: var(--prizm-button-primary-solid-default);
+}
+.prizm-button-outline:hover {
+  background: var(--prizm-button-ghost-hover);
+  border-color: var(--prizm-button-primary-solid-hover);
+  color: var(--prizm-button-primary-solid-hover);
+}
+/*-------Outline secondary----*/
+.prizm-button-outline.prizm-button-secondary {
+  border: 1px solid var(--prizm-button-secondary-solid-default);
+  background: transparent;
+  color: var(--prizm-button-secondary-solid-default);
+}
+.prizm-button-outline.prizm-button-secondary:hover {
+  background: var(--prizm-button-ghost-hover);
+  border-color: var(--prizm-button-secondary-solid-hover);
+  color: var(--prizm-button-secondary-solid-hover);
+}
+
+.prizm-button-outline:disabled {
+  border: 1px solid var(--prizm-button-disable);
+  background: transparent;
+}
+
+/*-------Outline success----*/
+.prizm-button-outline.prizm-button-success {
+  border: 1px solid var(--prizm-button-success-solid-default);
+  background: transparent;
+  color: var(--prizm-button-success-solid-default);
+}
+.prizm-button-outline.prizm-button-success:hover {
+  background: var(--prizm-button-ghost-hover);
+  border-color: var(--prizm-button-success-solid-hover);
+  color: var(--prizm-button-success-solid-hover);
+}
+
+/*-------Outline warning----*/
+.prizm-button-outline.prizm-button-warning {
+  border: 1px solid var(--prizm-button-warning-solid-default);
+  background: transparent;
+  color: var(--prizm-button-warning-solid-default);
+}
+.prizm-button-outline.prizm-button-warning:hover {
+  background: var(--prizm-button-ghost-hover);
+  border-color: var(--prizm-button-warning-solid-hover);
+  color: var(--prizm-button-warning-solid-hover);
+}
+
+/*-------Outline danger----*/
+.prizm-button-outline.prizm-button-danger {
+  border: 1px solid var(--prizm-button-alarm-solid-default);
+  background: transparent;
+  color: var(--prizm-button-alarm-solid-default);
+}
+.prizm-button-outline.prizm-button-danger:hover {
+  background: var(--prizm-button-ghost-hover);
+  border-color: var(--prizm-button-alarm-solid-default);
+  color: var(--prizm-button-alarm-solid-default);
+}
+
+
+/*--------Ghost---------*/
+
+.prizm-button-ghost {
+  background: transparent;
+  color: var(--prizm-button-primary-solid-default);
+}
+.prizm-button-ghost:hover {
+  background: var(--prizm-button-ghost-hover);
+  color: var(--prizm-button-primary-solid-hover);
+}
+
+/*Ghost secondary*/
+.prizm-button-ghost.prizm-button-secondary {
+  background: transparent;
+  color: var(--prizm-button-secondary-solid-default);
+}
+.prizm-button-ghost.prizm-button-secondary:hover {
+  background: var(--prizm-button-ghost-hover);
+  color: var(--prizm-button-secondary-solid-hover);
+}
+
+/*Ghost success*/
+.prizm-button-ghost.prizm-button-success {
+  background: transparent;
+  color: var(--prizm-button-success-solid-default);
+}
+.prizm-button-ghost.prizm-button-success:hover {
+  background: var(--prizm-button-ghost-hover);
+  color: var(--prizm-button-success-solid-hover);
+}
+
+/*Ghost warning*/
+.prizm-button-ghost.prizm-button-warning {
+  background: transparent;
+  color: var(--prizm-button-warning-solid-default);
+}
+.prizm-button-ghost.prizm-button-warning:hover {
+  background: var(--prizm-button-ghost-hover);
+  color: var(--prizm-button-warning-solid-hover);
+}
+
+/*Ghost danger*/
+.prizm-button-ghost.prizm-button-danger {
+  background: transparent;
+  color: var(--prizm-button-alarm-solid-default);
+}
+.prizm-button-ghost.prizm-button-danger:hover {
+  background: var(--prizm-button-ghost-hover);
+  color: var(--prizm-button-alarm-solid-default);
+}
