@@ -1,0 +1,130 @@
+.prizm-input {
+  background-color: var(--prizm-form-fill-default);
+  border: 1px solid var(--prizm-form-stroke-default);
+  border-radius: 2px;
+  padding: 0 8px;
+  line-height: 16px;
+  font-size: 14px;
+  color: var(--prizm-text-icon-secondary);
+  display: block;
+  text-overflow: ellipsis;
+  min-height: 44px;
+  font-family: 'Inter';
+}
+
+.prizm-input:hover {
+  border-color: var(--prizm-form-stroke-hover);
+}
+
+.prizm-input:focus {
+  border-color: var(--prizm-form-active);
+  box-shadow: 0 0 0 2px var(--prizm-background-stroke-focus);
+  position: relative;
+  outline: none;
+}
+
+.prizm-input-label {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--prizm-text-icon-tertiary);
+  line-height: 16px;
+  transition: top 200ms ease 0s;
+  pointer-events: none;
+}
+
+.prizm-input-subtext, .prizm-input-error {
+  font-family: 'Inter';
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--prizm-text-icon-secondary);
+
+  display: block;
+  min-height: 22px;
+}
+
+.prizm-input-error {
+  color: var(--prizm-status-alarm-primary-default);
+}
+
+.prizm-input[aria-invalid=true] {
+  border-color: var(--prizm-status-alarm-primary-default);
+}
+
+.prizm-input-group {
+  font-family: 'Inter';
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  background-color: var(--prizm-form-fill-default);
+  border: 1px solid var(--prizm-form-stroke-default);
+  border-radius: 2px;
+  line-height: 16px;
+  font-size: 14px;
+  color: var(--prizm-text-icon-secondary);
+}
+
+.prizm-input-group:focus-within {
+  border-color: var(--prizm-form-active);
+  box-shadow: 0 0 0 2px var(--prizm-background-stroke-focus);
+  position: relative;
+  outline: none;
+}
+
+.prizm-input-group .prizm-input {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.prizm-input-group .prizm-input:hover {
+  border-color: transparent;
+}
+
+.prizm-input-group .prizm-input:focus {
+  border-color: transparent;
+  box-shadow: none;
+  position: relative;
+  outline: none;
+}
+
+.prizm-input-group-before, .prizm-input-group-after {
+  align-items: center;
+  display: flex;
+}
+
+.prizm-input-group-before {
+  padding-left: 8px;
+}
+
+.prizm-input-group-after {
+  padding-right: 8px;
+}
+
+.prizm-input-group .prizm-input-label {
+  position: absolute;
+  top: 14px;
+  left: 8px;
+}
+
+.prizm-input-group .prizm-input:not(:placeholder-shown) + .prizm-input-label {
+  top: 2px;
+}
+
+.prizm-input-group .prizm-input:focus + .prizm-input-label {
+  top: 2px;
+}
+
+.prizm-input-area {
+  position: relative;
+  width: 100%;
+
+  .prizm-input {
+    padding: 22px 8px 4px 8px;
+    min-height: auto;
+  }
+}
