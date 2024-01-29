@@ -1,0 +1,27 @@
+.prizm-indicator {
+  height: 8px;
+  width: 8px;
+  min-height: 8px;
+  min-width: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.prizm-indicator.prizm-indicator-info {
+  background: var(--prizm-status-info-primary-default);
+}
+.prizm-indicator.prizm-indicator-secondary {
+  background: var(--prizm-status-none-secondary-default);
+}
+.prizm-indicator.prizm-indicator-success {
+  background: var(--prizm-status-success-primary-default);
+}
+.prizm-indicator.prizm-indicator-warning {
+  background: var(--prizm-status-warning-primary-default);
+}
+.prizm-indicator.prizm-indicator-danger {
+  background: var(--prizm-status-alarm-primary-default);
+}
+
