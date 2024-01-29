@@ -495,7 +495,7 @@ export type PrizmIconSvgsId =
   | 'production-industry_burn'
   | 'production-industry_carbon'
   | 'production-industry_cart-flatbed-container'
-  | 'production-industry_container 2'
+  | 'production-industry_container-2'
   | 'production-industry_container'
   | 'production-industry_containers'
   | 'production-industry_crane'
@@ -531,7 +531,7 @@ export type PrizmIconSvgsId =
   | 'production-industry_oil-tank'
   | 'production-industry_pipe-sensor'
   | 'production-industry_pipe-valve'
-  | 'production-industry_pipeline 2'
+  | 'production-industry_pipeline-2'
   | 'production-industry_pipeline'
   | 'production-industry_press'
   | 'production-industry_pump-triangle-down'
@@ -1865,7 +1865,7 @@ export enum PrizmIconType {
   ProductionIndustryBurn = 'production-industry_burn',
   ProductionIndustryCarbon = 'production-industry_carbon',
   ProductionIndustryCartFlatbedContainer = 'production-industry_cart-flatbed-container',
-  ProductionIndustryContainer_2 = 'production-industry_container 2',
+  ProductionIndustryContainer_2 = 'production-industry_container-2',
   ProductionIndustryContainer = 'production-industry_container',
   ProductionIndustryContainers = 'production-industry_containers',
   ProductionIndustryCrane = 'production-industry_crane',
@@ -1901,7 +1901,7 @@ export enum PrizmIconType {
   ProductionIndustryOilTank = 'production-industry_oil-tank',
   ProductionIndustryPipeSensor = 'production-industry_pipe-sensor',
   ProductionIndustryPipeValve = 'production-industry_pipe-valve',
-  ProductionIndustryPipeline_2 = 'production-industry_pipeline 2',
+  ProductionIndustryPipeline_2 = 'production-industry_pipeline-2',
   ProductionIndustryPipeline = 'production-industry_pipeline',
   ProductionIndustryPress = 'production-industry_press',
   ProductionIndustryPumpTriangleDown = 'production-industry_pump-triangle-down',

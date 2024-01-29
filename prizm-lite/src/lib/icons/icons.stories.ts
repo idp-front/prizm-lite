@@ -4039,10 +4039,10 @@ export const Default: Story = {
 
     <div class="preview">
       <span class="inner">
-        <i class="prizm-icons prizm-icons-production-industry_container 2"></i>
+        <i class="prizm-icons prizm-icons-production-industry_container-2"></i>
       </span>
       <br />
-      <span class="label">production-industry_container 2</span>
+      <span class="label">production-industry_container-2</span>
     </div>
 
     <div class="preview">

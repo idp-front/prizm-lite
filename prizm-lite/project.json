@@ -14,17 +14,22 @@
         "assets": ["prizm-lite/*.md",
           {
             "input": "prizm-lite/src/lib/fonts",
-            "glob": "**/*.{woff,woff2}",
+            "glob": "**/*.{woff,eot,ttf,woff2}",
+            "output": "./"
+          },
+          {
+            "input": "prizm-lite/src/lib/icons",
+            "glob": "**/*.{woff,eot,ttf,woff2}",
             "output": "./"
           },
           {
             "input": "prizm-lite/src/lib",
-            "glob": "**/*.{css,woff,woff2}",
+            "glob": "**/*.{css,eot,ttf,woff,woff2}",
             "output": "./src"
           }
         ],
         "generatePackageJson": true,
-        "external": ["*.woff","*.woff2"],
+        "external": ["*.woff","*.eot","*.ttf","*.woff2"],
         "additionalEntryPoints": ["prizm-lite/src/styles.css"],
         "format": ["esm"],
         "bundle": true,

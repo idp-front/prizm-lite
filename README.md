@@ -6,24 +6,37 @@ Prizm design system, zero-dependency implementation html+css.
 
 ## Install
 
-You can choose one of the following options
+### Step 1: Install the Prizm-Lite Package
 
 1. Install from npm.
 ```
-  npm i @prizm-ui/lite
+  npm i @prizm-ui/prizm-lite
 ```
 
 2. Download artefacts
 
 [prizm-lite-0.0.1.tgz](https://registry.npmjs.org/@prizm-ui/prizm-lite/-/prizm-lite-0.0.1.tgz)
 
-3. Install from CDN
+### Step 2: Include the Prizm-Lite Styles
+
+Include `@prizm-ui/prizm-lite/styles.css` in your app's stylesheet. You will need to ensure your build process is setup to bundle CSS from npm packages.
+
+```css
+@import '@prizm-ui/prizm-lite/styles.css';
 
 ```
-  TODO, not implemented
+
+Alternatively, you can load the theme file using the npm unpkg content delivery network (CDN). See unpkg.com for more details. For example:
+
+
+```html
+<!-- Load the latest version -->
+<link rel="stylesheet" href="https://unpkg.com/@prizm-ui/prizm-lite/styles.css" />
+<!-- Or load a specific version, recommended -->
+<link rel="stylesheet" href="https://unpkg.com/@prizm-ui/prizm-lite@0.0.1/styles.css" />
 ```
 
-## Setup
+## Setup for web sites
 
 After downloading, extract the files into the directory where your website is located. Your directory will look something like this.
 

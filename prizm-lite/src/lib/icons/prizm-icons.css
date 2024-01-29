@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'prizm-icons';
-  src: url('./prizm-icons.ttf?1772816e867a80e18921a5b7d83b4205') format('truetype'),
-    url('./prizm-icons.woff?1772816e867a80e18921a5b7d83b4205') format('woff'),
-    url('./prizm-icons.eot?1772816e867a80e18921a5b7d83b4205#iefix') format('embedded-opentype'),
-    url('./prizm-icons.woff2?1772816e867a80e18921a5b7d83b4205') format('woff2');
+  src: url('./prizm-icons.ttf') format('truetype'),
+    url('./prizm-icons.woff') format('woff'),
+    url('./prizm-icons.eot') format('embedded-opentype'),
+    url('./prizm-icons.woff2') format('woff2');
 }
 
 i[class^='prizm-icons-']:before,
@@ -1506,7 +1506,7 @@ i[class*=' prizm-icons-']:before {
 .prizm-icons-production-industry_cart-flatbed-container:before {
   content: '\f2f0';
 }
-.prizm-icons-production-industry_container 2:before {
+.prizm-icons-production-industry_container-2:before {
   content: '\f2f1';
 }
 .prizm-icons-production-industry_container:before {
@@ -1614,7 +1614,7 @@ i[class*=' prizm-icons-']:before {
 .prizm-icons-production-industry_pipe-valve:before {
   content: '\f314';
 }
-.prizm-icons-production-industry_pipeline 2:before {
+.prizm-icons-production-industry_pipeline-2:before {
   content: '\f315';
 }
 .prizm-icons-production-industry_pipeline:before {
