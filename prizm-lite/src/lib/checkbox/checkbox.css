@@ -1,0 +1,78 @@
+.prizm-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 16px;
+  cursor: pointer;
+  user-select: none;
+  font-family: Inter;
+}
+
+.prizm-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.prizm-checkbox input:focus ~ .prizm-checkbox__checkmark {
+  box-shadow: 0 0 0 2px var(--prizm-background-stroke-focus);
+}
+
+.prizm-checkbox input:disabled ~ .prizm-checkbox__checkmark {
+  border-color: var(--prizm-form-fill-disable);
+  background-color: var(--prizm-form-fill-disable);
+}
+
+.prizm-checkbox input:disabled ~ .prizm-checkbox__body {
+  color: var(--prizm-text-icon-disable);
+}
+
+.prizm-checkbox input:checked ~ .prizm-checkbox__checkmark {
+  border-color: var(--prizm-form-active);
+  background-color: var(--prizm-form-active);
+}
+.prizm-checkbox input:checked ~ .prizm-checkbox__checkmark:after {
+  opacity: 1;
+  color:  var(--prizm-form-active);
+}
+.prizm-checkbox:hover input ~ .prizm-checkbox__checkmark {
+  background-color: var(--prizm-form-fill-default);
+}
+.prizm-checkbox:hover input:checked ~ .prizm-checkbox__checkmark {
+  border-color: var(--prizm-form-active);
+  background-color: var(--prizm-form-active);
+}
+.prizm-checkbox .prizm-checkbox__checkmark {
+  position: absolute;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: var(--prizm-form-fill-default);
+  border: 1px solid var(--prizm-form-stroke-default);
+  transition: background-color 0.25s ease;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+.prizm-checkbox .prizm-checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 3px;
+  height: 7px;
+  border: solid var(--prizm-text-icon-exception);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.prizm-checkbox .prizm-checkbox__body {
+  margin-left: 8px;
+  color: var(--prizm-text-icon-secondary);
+  width: 100%;
+  max-width: 100%;
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 16px;
+}
