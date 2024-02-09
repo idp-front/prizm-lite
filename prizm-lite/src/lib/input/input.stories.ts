@@ -133,6 +133,33 @@ export const InputSizes: Story = {
   },
 };
 
+export const InputSelect: Story = {
+  render: (args) => {
+    const area = document.createElement('div');
+    area.innerHTML = `
+    <label class="prizm-input-label" for="pet-select">
+         Label
+    </label>
+
+    <div class="prizm-input-group">
+      <select name="pets" id="pet-select" class="prizm-input">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+      </select>
+    </div>
+    `
+    return area;
+  },
+  args: {
+    label: 'Label',
+  },
+};
+
 function createInput(args: Args, classNames: string[] =[]) {
   const el = document.createElement('input');
   el.className = ['prizm-input', ...classNames].join(' ');
