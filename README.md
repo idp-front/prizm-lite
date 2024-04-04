@@ -68,4 +68,4 @@ MyWebsite/
 
 ### Example templates
 
-TODO
+[Prizm status](https://github.com/idp-front/prizm-status)
