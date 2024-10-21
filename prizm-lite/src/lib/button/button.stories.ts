@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/html';
 
 type ButtonArgs = {
-  label: string;
+  label?: string;
+  html?: string;
 };
 
 const meta: Meta<ButtonArgs> = {
@@ -83,6 +84,40 @@ export const Sizes: Story = {
   },
 };
 
+export const IconButtons: Story = {
+  render: (args) => {
+    const area = document.createElement('div');
+
+    const defaultP = document.createElement('p');
+    defaultP.innerText = 'Default:';
+    area.appendChild(defaultP);
+    area.appendChild(createButton({html: '<i class="prizm-icons prizm-icons-charts-diagrams_bar-axis"></i>'}, ['prizm-button prizm-icon-button'], ))
+
+    const ghostP = document.createElement('p');
+    ghostP.innerText = 'Ghost:';
+    area.appendChild(ghostP);
+    area.appendChild(createButton({html: '<i class="prizm-icons prizm-icons-charts-diagrams_bar-axis"></i>'}, ['prizm-button prizm-icon-button prizm-button-ghost prizm-button-secondary'], ))
+
+    const sizesP = document.createElement('p');
+    sizesP.innerText = 'Sizes:';
+    area.appendChild(sizesP);
+
+    for (const size of ['xl','l','xm','m','s']) {
+      const p = document.createElement('p');
+
+      const btn = createButton({html: '<i class="prizm-icons prizm-icons-charts-diagrams_bar-axis"></i>'}, ['prizm-button prizm-icon-button prizm-icon-button-'+size, 'prizm-icon-button-'+size], );
+
+      p.appendChild(btn);
+      area.appendChild(p);
+    }
+
+    return area;
+  },
+  args: {
+    label: 'Button2',
+  },
+};
+
 
 
 export const Colors: Story = {
@@ -110,7 +145,12 @@ export const Colors: Story = {
 
 function createButton(args: ButtonArgs, classNames: string[] =[]) {
   const btn = document.createElement('button');
-  btn.innerText = args.label;
+  if(args.label) {
+    btn.innerText = args.label;
+  }
+  if(args.html) {
+    btn.innerHTML = args.html;
+  }
   btn.className = ['prizm-button', ...classNames].join(' ');
   return btn;
 }
