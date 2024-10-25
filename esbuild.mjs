@@ -8,7 +8,7 @@ import purgecss from "@fullhuman/postcss-purgecss";
 esbuild
   .build({
     entryPoints: [
-      "prizm-lite/src/lib/styles.css",
+      "prizm-lite/src/styles.css",
     ],
     outdir: "dist/prizm-lite",
     bundle: true,
@@ -20,17 +20,18 @@ esbuild
       // ".ttf": "dataurl",
       // ".svg": "dataurl",
     },
-    external: ['*.woff','*.woff2'],
+    external: ['*.woff','*.woff2', '*.ttf', "*.eot"],
     plugins: [
       sassPlugin({
         async transform(source) {
           const { css } = await postcss([
-            purgecss({
-              content: ["prizm-lite/src/**/*.html"],
-            }),
+            // remove unuse css
+            // purgecss({
+            //   content: ["prizm-lite/src/**/*.html"],
+            // }),
             autoprefixer,
           ]).process(source, {
-            from: "prizm-lite/src/lib/styles.css",
+            from: "prizm-lite/src/styles.css",
           });
           return css;
         },
