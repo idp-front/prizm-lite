@@ -6,7 +6,7 @@
     "build": "nx build prizm-lite",
     "storybook:serve": "nx storybook prizm-lite",
     "storybook:prod": "nx build-storybook prizm-lite",
-    "esbuild": "esbuild --bundle prizm-lite/src/styles.css --outfile=dist/prizm-lite/prizm.min.css"
+    "esbuild": "node esbuild.mjs"
   },
   "private": true,
   "devDependencies": {
