@@ -72,22 +72,59 @@ export const PanelWithBackButton: Story = {
 <div class="content">
 
   <div class="prizm-panel">
-   <div class="prizm-panel-title not-left-indent">
-    <span class="prizm-panel-title__main">Заголовок</span>
-    <span class="prizm-panel-title__sub"> Подзаголовок </span>
-  </div>
   <div class="prizm-panel-back-btn-wrapper">
-    <button class="prizm-button prizm-panel-button prizm-icon-button prizm-button-ghost prizm-button-secondary"><i class="prizm-icons prizm-icons-arrow-left"></i></button>
+    <button class="prizm-button prizm-panel-button prizm-icon-button prizm-button-ghost prizm-button-secondary">
+        <i class="prizm-icons prizm-icons-settings-tools_bars"></i>
+    </button>
   </div>
-  <div class="prizm-panel-buttons">
-
+   <div class="prizm-panel-title not-left-indent">
+    Заголовок
   </div>
-
 </div>
 
 <div class="content-body">
-    TODO
+    body
 </div>
+</div>
+    `
+    return area;
+  },
+  args: {
+    label: 'Label',
+  },
+};
+
+
+export const PanelWithInstruments: Story = {
+  render: (args) => {
+    const area = document.createElement('div');
+    area.innerHTML = `
+<style>
+.content {
+    border: 1px solid var(--prizm-background-stroke);
+}
+.content-body {
+  font-family: 'Inter';
+  padding: 16px;
+}
+</style>
+<div class="content">
+
+  <div class="prizm-panel">
+    <div class="prizm-panel-instruments">
+        <button class="prizm-button prizm-panel-button prizm-icon-button prizm-button-ghost prizm-button-secondary">
+            <i class="prizm-icons prizm-icons-settings-tools_ban"></i>
+        </button>
+
+        <button class="prizm-button prizm-panel-button prizm-icon-button prizm-button-ghost prizm-button-secondary">
+            <i class="prizm-icons prizm-icons-settings-tools_bars"></i>
+        </button>
+    </div>
+  </div>
+
+  <div class="content-body">
+      body
+  </div>
 </div>
 
     `

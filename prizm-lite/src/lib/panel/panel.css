@@ -17,6 +17,7 @@
 }
 .prizm-panel .prizm-panel-back-btn-wrapper {
   margin: auto 8px auto 0px;
+  padding-right: 8px;
   border-right: 1px solid var(--prizm-background-stroke);
 }
 .prizm-panel .back-btn-wrapper .prizm-panel-button {
@@ -33,7 +34,7 @@
 .prizm-panel .prizm-panel-title.not-left-indent {
   margin-left: 0;
 }
-.prizm-panel .prizm-panel-title prizm-panel-span {
+.prizm-panel .prizm-panel-title .prizm-panel-span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -65,12 +66,16 @@
   margin-right: 12px;
 }
 .prizm-panel .prizm-panel-instruments {
-  margin-left: auto;
+  margin: auto 0 auto auto;
   padding-left: 8px;
-  padding-right: 4px;
+
   display: flex;
   overflow: hidden;
 }
 .prizm-panel .prizm-panel-buttons:empty, .prizm-panel .prizm-panel-instruments:empty {
   display: none;
+}
+
+.prizm-panel-button {
+  margin-right: 8px;
 }

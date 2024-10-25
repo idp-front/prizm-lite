@@ -39,6 +39,9 @@
   min-height: 32px;
   padding: 0;
 }
+.prizm-icon-button:focus {
+  box-shadow: inherit;
+}
 
 /*Sizing*/
 .prizm-button-xl,.prizm-button[data-size='xl'] {
@@ -97,7 +100,7 @@
   background: var(--prizm-button-primary-solid-default);
 }
 
-.prizm-button-primary:hover {
+.prizm-button-primary:hover,.prizm-button-primary+.prizm-icon-button:focus {
   background: var(--prizm-button-primary-solid-hover);
 }
 
