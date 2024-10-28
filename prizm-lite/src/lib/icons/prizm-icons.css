@@ -7509,7 +7509,7 @@
 
 @font-face {
   font-family: prizm-icons;
-  src: url(prizm-icons.4cda35535b552f51.ttf?1772816e867a80e18921a5b7d83b4205) format("truetype"),url(prizm-icons.338d45718c425c22.woff?1772816e867a80e18921a5b7d83b4205) format("woff"),url(prizm-icons.7f9992f37d628ff8.eot?1772816e867a80e18921a5b7d83b4205#iefix) format("embedded-opentype"),url(prizm-icons.115ba70d7d0e63a1.woff2?1772816e867a80e18921a5b7d83b4205) format("woff2")
+  src: url(prizm-icons.4cda35535b552f51.ttf) format("truetype"),url(prizm-icons.338d45718c425c22.woff) format("woff"),url(prizm-icons.7f9992f37d628ff8.eot) format("embedded-opentype"),url(prizm-icons.115ba70d7d0e63a1.woff2) format("woff2")
 }
 
 i[class^=prizm-icons-]:before,i[class*=" prizm-icons-"]:before {
@@ -13920,7 +13920,7 @@ i[class^=prizm-icons-]:before,i[class*=" prizm-icons-"]:before {
 
 @font-face {
   font-family: prizm-base-icons;
-  src: url(prizm-base-icons.eot?72bcd659593a2bf8e8ae2e9a2b6e82b8#iefix) format("embedded-opentype"),url(prizm-base-icons.woff2?72bcd659593a2bf8e8ae2e9a2b6e82b8) format("woff2"),url(prizm-base-icons.woff?72bcd659593a2bf8e8ae2e9a2b6e82b8) format("woff"),url(prizm-base-icons.ttf?72bcd659593a2bf8e8ae2e9a2b6e82b8) format("truetype")
+  src: url(prizm-base-icons.eot) format("embedded-opentype"),url(prizm-base-icons.woff2) format("woff2"),url(prizm-base-icons.woff) format("woff"),url(prizm-base-icons.ttf) format("truetype")
 }
 
 [class^=prizm-full-icons-]:before,[class*=" prizm-full-icons-"]:before {
@@ -17576,5 +17576,5 @@ i[class^=prizm-icons-]:before,i[class*=" prizm-icons-"]:before {
 
 @font-face {
   font-family: prizm-full-icons;
-  src: url(prizm-full-icons.eot?b1235329c12083e8fde2e21c8e62bae1#iefix) format("embedded-opentype"),url(prizm-full-icons.woff2?b1235329c12083e8fde2e21c8e62bae1) format("woff2"),url(prizm-full-icons.woff?b1235329c12083e8fde2e21c8e62bae1) format("woff"),url(prizm-full-icons.ttf?b1235329c12083e8fde2e21c8e62bae1) format("truetype")
+  src: url(prizm-full-icons.eot) format("embedded-opentype"),url(prizm-full-icons.woff2) format("woff2"),url(prizm-full-icons.woff) format("woff"),url(prizm-full-icons.ttf) format("truetype")
 }
