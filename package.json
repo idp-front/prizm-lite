@@ -6,7 +6,8 @@
     "build": "nx build prizm-lite",
     "storybook:serve": "nx storybook prizm-lite",
     "storybook:prod": "nx build-storybook prizm-lite",
-    "esbuild": "node esbuild.mjs"
+    "esbuild": "node esbuild.mjs",
+    "build:library": "npm run build && npm run esbuild"
   },
   "private": true,
   "devDependencies": {

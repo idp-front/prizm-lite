@@ -69,3 +69,14 @@ MyWebsite/
 ### Example templates
 
 [Prizm status](https://github.com/idp-front/prizm-status)
+
+
+### Development
+
+Build library and publish to npm.
+
+1. npm run build:library 
+2. cd ./dist/prizm-lite
+3. npm publish
+
+TODO: add `npm publish` to CD
